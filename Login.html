@@ -1,0 +1,122 @@
+<!--Erlangga Adifah Firmansyah-3337250014-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SH-STORE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body {
+            background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            padding: 15px 30px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: #d09cff; }
+        
+        .login-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .login-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+        }
+        .login-box h2 {
+            color: #fff;
+            font-size: 36px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        .login-box input {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.9);
+            font-size: 14px;
+            outline: none;
+        }
+        .login-box button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(45deg, #8c00ff, #4a00e0);
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .login-box button:hover {
+            box-shadow: 0 0 15px #8c00ff;
+        }
+        .login-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .login-links a {
+            color: #ddd;
+            font-size: 13px;
+            text-decoration: none;
+        }
+        .login-links a:hover { color: #fff; text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="kontak.html">Contact</a>
+        </nav>
+    </header>
+    <div class="login-container">
+        <form class="login-box" action="home.html">
+            <h2>Login</h2>    
+            <input type="email" placeholder="Email or Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Submit</button>
+            <div class="login-links">
+                <a href="home.html">Guest Account</a>
+                <a href="buat.html">Make an Account</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
