@@ -18,10 +18,10 @@ Tugas Kolaborasi Pembuatan Halaman Web (HTML) menggunakan Git dan GitHub.
 
 **1. Erlangga Adifah Firmansyah (a3snewbaru990-ui)**
 * Membuat Repositori GitHub dan mengundang kolaborator.
-* Membuat struktur dasar halaman utama/kolaborasi (`home.html`)[cite: 1].
-* Membuat desain dan koding untuk halaman individu pertama (`Login.html`)[cite: 3].
+* Membuat struktur dasar halaman utama/kolaborasi (`home.html`).
+* Membuat desain dan koding untuk halaman individu pertama (`Login.html`.
 * Menerima dan melakukan *Merge Pull Request* dari semua branch ke branch utama (`main`).
 
 **2. Ihsan Fadilah Efendi (Saneshine)**
 * Melakukan integrasi *clone* dan *branching* lokal.
-* Membuat desain dan koding untuk halaman individu kedua (`kontak.html`)[cite: 2].
+* Membuat desain dan koding untuk halaman individu kedua (`kontak.html`).
