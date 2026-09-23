@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SH-STORE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body {
+            background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop');
+            background-repeat: no-repeat; background-size: cover; background-position: center;
+            background-attachment: fixed; min-height: 100vh;
+            display: flex; flex-direction: column;
+        }
+        .custom-navbar {
+            background: rgba(0, 0, 0, 0.6) !important;
+            backdrop-filter: blur(10px); padding: 12px 20px;
+        }
+        .custom-navbar .navbar-brand { letter-spacing: 3px; font-weight: 800; }
+        .custom-navbar .nav-link { color: #fff !important; margin-left: 10px; transition: 0.3s; }
+        .custom-navbar .nav-link:hover, .custom-navbar .nav-link.active { color: #d09cff !important; }
+
+        /* Flexbox: container & info */
+        .contact-container { flex: 1; display: flex; justify-content: center; align-items: center; padding: 40px 20px; }
+        .contact-box {
+            background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 40px; border-radius: 15px; width: 100%; max-width: 600px;
+            box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+            display: flex; flex-direction: column; gap: 15px;
+        }
+        .contact-box h2 { color: #fff; font-size: 36px; text-align: center; margin-bottom: 10px; letter-spacing: 2px; }
+        .contact-info {
+            display: flex; flex-direction: column; gap: 5px;
+            color: #fff; text-align: center; font-size: 14px; margin-bottom: 10px;
+            background: rgba(0,0,0,0.25); border-radius: 12px; padding: 15px;
+        }
+        .contact-box input, .contact-box textarea {
+            width: 100%; padding: 15px 20px; border: none; border-radius: 15px;
+            background: rgba(255, 255, 255, 0.9); font-size: 14px; outline: none; resize: none;
+        }
+
+        footer {
+            display: flex; justify-content: center; align-items: center;
+            flex-wrap: wrap; gap: 10px;
+            background: rgba(0,0,0,0.6); color: #ddd; padding: 15px; font-size: 14px;
+        }
+
+        /* Media query */
+        @media (max-width: 768px) {
+            .contact-box { padding: 30px 20px; max-width: 100%; }
+            .contact-box h2 { font-size: 28px; }
+            .contact-container { padding: 20px 15px; }
+        }
+        @media (max-width: 576px) {
+            .contact-box { padding: 25px 15px; }
+            .contact-box h2 { font-size: 24px; }
+            .contact-info { font-size: 12px; }
+            footer { font-size: 12px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">SH-STORE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="kontak.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Login.html">Sign In</a></li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a class="btn btn-light btn-sm px-3 rounded-pill" href="buat.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <form class="contact-box" action="home.html">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p class="mb-1">📍 Alamat: Jl. Raya Cilegon, Banten, Indonesia</p>
+                <p class="mb-1">📞 Telepon: +62 813-8615-9587</p>
+                <p class="mb-0">✉️ Email: support@sh-store.com</p>
+            </div>
+            <input type="text" placeholder="Nama Lengkap" required>
+            <input type="email" placeholder="Alamat Email" required>
+            <textarea rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            <button type="submit" class="btn btn-primary w-100 rounded-pill fw-semibold"
+                style="background:linear-gradient(45deg,#8c00ff,#4a00e0);border:none;padding:15px;">Kirim Pesan</button>
+        </form>
+    </div>
+
+    <footer><span>&copy; 2026 SH-STORE</span><span>•</span><span>Contact Page</span></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
